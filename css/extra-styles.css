@@ -59,7 +59,8 @@ body {
     line-height: 1.25;
     text-shadow: inherit; }
   .reveal a:not(.image) {
-    color: #ffde00; }
+    color: #b70035;
+    text-shadow: 1px -1px 1px #fff, 1px 1px 1px #fff, -1px -1px 1px #fff, -1px 1px 1px #fff; }
   .reveal pre {
     box-shadow: none;
     font-size: inherit;
@@ -75,6 +76,9 @@ body {
     font-size: 0.8em;
     text-transform: none;
     vertical-align: middle; }
+  .reveal del {
+    -webkit-text-decoration-color: #b70035;
+            text-decoration-color: #b70035; }
   .reveal iframe,
   .reveal pre code {
     max-height: 90%;
@@ -151,7 +155,7 @@ body {
     quotes: "“" "”" "‘" "’";
     position: relative;
     margin-bottom: 3rem;
-    padding: 3rem 4rem;
+    padding: 3rem 3rem;
     background-color: #fff;
     color: #000;
     border-radius: 50%;
@@ -174,9 +178,9 @@ body {
     .reveal blockquote:after {
       content: '';
       position: absolute;
-      bottom: -50px;
+      bottom: -60px;
       left: 60%;
-      border: 70px solid #fff;
+      border: 60px solid #fff;
       border-color: #fff transparent transparent #fff; }
     .reveal blockquote p {
       display: inline !important;

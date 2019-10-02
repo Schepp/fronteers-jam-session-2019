@@ -1,4 +1,4 @@
 <!-- .slide: data-background="images/captain-america-shield.jpg" data-state="inverted faded" -->
 
 <br><br><br><br><br><br>
-# What I learned about Imagery on the Web
+# Things you didn't know about Images on the Web

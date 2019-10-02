@@ -3,7 +3,6 @@
 <br><br><br><br><br><br>
 ## That's about it. Thank you!
 
-* Slides: [http://schepp.github.io/imagery-on-the-web/](http://schepp.github.io/imagery-on-the-web/)
+* Slides: [http://schepp.github.io/fronteers-jam-session-2019/](http://schepp.github.io/fronteers-jam-session-2019/)
 * Twitter: [@derSchepp](https://twitter.com/derSchepp) (English)
 * Podcast: [Working Draft](http://workingdraft.de) (German)
-* Meetup: [Webworker NRW](https://www.meetup.com/Webworker-NRW/)

@@ -64,7 +64,8 @@ body {
   }
 
   a:not(.image) {
-    color: rgba(255, 222, 0, 1);
+    color: rgb(183, 0, 53);
+    text-shadow: 1px -1px 1px #fff, 1px 1px 1px #fff, -1px -1px 1px #fff, -1px 1px 1px #fff;
   }
 
   pre {
@@ -84,6 +85,10 @@ body {
     font-size: 0.8em;
     text-transform: none;
     vertical-align: middle;
+  }
+
+  del {
+    text-decoration-color: rgb(183, 0, 53);
   }
 
   iframe,
@@ -199,7 +204,7 @@ body {
     quotes: "“" "”" "‘" "’";
     position: relative;
     margin-bottom: 3rem;
-    padding: 3rem 4rem;
+    padding: 3rem 3rem;
     background-color: #fff;
     color: #000;
     border-radius: 50%;
@@ -226,9 +231,9 @@ body {
     &:after {
       content: '';
       position: absolute;
-      bottom: -50px;
+      bottom: -60px;
       left: 60%;
-      border: 70px solid #fff;
+      border: 60px solid #fff;
       border-color: #fff transparent transparent #fff;
     }
 

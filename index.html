@@ -4,18 +4,18 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Imagery on the Web</title>
+    <title>Fronteers Jam Session 2019: Things you didn't know about images</title>
 
-    <meta name="description" content="Things you didn't know about images">
+    <meta name="description" content="Things you didn't know about images on the web">
 
     <meta name="robots" content="noindex, nofollow">
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="Imagery on the Web">
     <meta property="og:site_name" content="Things you didn't know about images">
-    <meta property="og:url" content="https://schepp.github.io/imagery-on-the-web/">
-    <meta property="og:image" content="https://schepp.github.io/imagery-on-the-web/images/captain-america-shield.jpg">
-    <meta property="article:published_time" content="2019-01-04">
+    <meta property="og:url" content="https://schepp.github.io/fronteers-jam-session-2019/">
+    <meta property="og:image" content="https://schepp.github.io/fronteers-jam-session-2019/images/captain-america-shield.jpg">
+    <meta property="article:published_time" content="2019-10-03">
     <meta property="article:author" content="https://twitter.com/derSchepp">
 
     <meta name="apple-mobile-web-app-capable" content="yes"/>
@@ -56,25 +56,31 @@
                  data-notes="^Note:"
                  data-charset="utf-8">
         </section>
-        <section data-markdown="markdown/markup.md"
+        <section data-markdown="markdown/01_image-alias.md"
                  data-separator="^-----\n"
                  data-vertical="^---\n"
                  data-notes="^Note:"
                  data-charset="utf-8">
         </section>
-        <section data-markdown="markdown/methods.md"
+        <section data-markdown="markdown/02_alt-attribute.md"
                  data-separator="^-----\n"
                  data-vertical="^---\n"
                  data-notes="^Note:"
                  data-charset="utf-8">
         </section>
-        <section data-markdown="markdown/formats.md"
+        <section data-markdown="markdown/03_decode-method.md"
                  data-separator="^-----\n"
                  data-vertical="^---\n"
                  data-notes="^Note:"
                  data-charset="utf-8">
         </section>
-        <section data-markdown="markdown/styling.md"
+        <section data-markdown="markdown/04_pseudo-elements.md"
+                 data-separator="^-----\n"
+                 data-vertical="^---\n"
+                 data-notes="^Note:"
+                 data-charset="utf-8">
+        </section>
+        <section data-markdown="markdown/05_houdini.md"
                  data-separator="^-----\n"
                  data-vertical="^---\n"
                  data-notes="^Note:"
@@ -106,7 +112,7 @@
         controls: true,
         progress: true,
         history: true,
-        center: false,
+        center: true,
         slideNumber: true,
 
         theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
@@ -195,6 +201,18 @@
 
 </script>
 <script>
+    document.addEventListener('click', (e) => {
+       const validatorLink = e.target.closest('[target="validator"]');
+
+       if (!validatorLink) {
+           return;
+       }
+
+       window.open(validatorLink.href, 'validator', `width=${screen.availWidth - 40},height=${screen.availHeight - 120}`);
+
+       e.preventDefault();
+    });
+
     Reveal.addEventListener( 'ready', () => {
         const map = {
             'css-image-focus-setter': 'div {\n' +
