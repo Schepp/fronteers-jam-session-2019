@@ -1,4 +1,4 @@
-<h1 class="boom">Bonus</h1>
+<h1 class="boom">6.</h1>
 ---
 ## Animated image formats
 

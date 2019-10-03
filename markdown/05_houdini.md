@@ -1,6 +1,12 @@
 <h1 class="boom">5.</h1>
 ---
-Houdini brings us the possibility to declare the type of a CSS custom property:
+<pre><code>--custom-property: 1</code></pre>
+
+<p class="fragment">👆 This looks like a number, but really is a dumb string.</p>
+
+<p class="fragment">Therefore, you cannot animate that value.</p>
+---
+Luckily Houdini brings us the possibility to declare the type of a CSS custom property:
 
 <pre><code>CSS.registerProperty({
   name: '--multiply',
