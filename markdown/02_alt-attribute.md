@@ -1,4 +1,4 @@
-# 2. Attribute
+<h1 class="boom">2.</h1>
 ---
 <!-- .slide: data-transition="none" -->
 ## This is about the alt-tag<span style="visibility: hidden">-attribute</span>
@@ -20,7 +20,7 @@ the value must be an appropriate replacement for the image.
 
 <a href="https://html5.validator.nu/?doc=http%3A%2F%2Fschepp.github.io%2Ffronteers-jam-session-2019%2Fdemos%2Falt.html&showsource=yes" target="validator" class="fragment">Validator example</a>
 ---
-<a href="https://html5.validator.nu/?doc=http%3A%2F%2Fschepp.github.io%2Ffronteers-jam-session-2019%2Fdemos%2Ftitle.html&showsource=yes" target="validator">A title-attribute works, too!</a>
+<a href="https://html5.validator.nu/?doc=http%3A%2F%2Fschepp.github.io%2Ffronteers-jam-session-2019%2Fdemos%2Ftitle.html&showsource=yes" target="validator">But a title-attribute works, too!</a>
 
 <a href="https://html5.validator.nu/?doc=http%3A%2F%2Fschepp.github.io%2Ffronteers-jam-session-2019%2Fdemos%2Ffigcaption.html&showsource=yes" target="validator" class="fragment">as does &lt;figcaption&gt;</a>
 ---

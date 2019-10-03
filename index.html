@@ -92,6 +92,18 @@
                  data-notes="^Note:"
                  data-charset="utf-8">
         </section>
+        <section data-markdown="markdown/06_animated-formats.md"
+                 data-separator="^-----\n"
+                 data-vertical="^---\n"
+                 data-notes="^Note:"
+                 data-charset="utf-8">
+        </section>
+        <section data-markdown="markdown/end.md"
+                 data-separator="^-----\n"
+                 data-vertical="^---\n"
+                 data-notes="^Note:"
+                 data-charset="utf-8">
+        </section>
     </div>
 
 </div>
@@ -235,6 +247,9 @@
 
         Object.keys(map).forEach((id) => {
             const obj = document.getElementById(id);
+
+            if (!obj) return;
+
             const handleMouse = (e) => {
                 const rects = obj.getBoundingClientRect();
                 const objWidth = rects.width * Reveal.getScale();
@@ -269,6 +284,9 @@
         (function(){
             //canvas init
             var canvas = document.getElementById("canvas");
+
+            if (!canvas) return;
+
             var ctx = canvas.getContext("2d");
 
             //canvas dimensions

@@ -1,6 +1,6 @@
-# 4. Styling
+<h1 class="boom">4.</h1>
 ---
-## Styling broken images [⚡](snippets/pseudo-elements.txt) [⚡](snippets/broken-image-styling.txt)
+## Pseudo Elements [⚡](snippets/pseudo-elements.txt) [⚡](snippets/broken-image-styling.txt)
 
 <style>
 #css-broken-image img { vertical-align: bottom; }

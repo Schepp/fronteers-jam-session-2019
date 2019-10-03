@@ -1,17 +1,17 @@
-# 3. JavaScript
+<h1 class="boom">3.</h1>
 ---
 Loading images, the old fashioned way:
 
 ```js
-const img = new Image();
+const image = new Image();
 
-img.onload = () => {
+image.onload = () => {
   // insertion, followed by the image decode
   document.body.appendChild(img);  
 };
 
 // triggers loading
-img.src = 'image.jpg';
+image.src = 'image.jpg';
 ```
 ---
 But&hellip;
@@ -21,19 +21,19 @@ But&hellip;
 The new and shiny way of loading images:
 
 ```js
-const img = new Image();
+const image = new Image();
 
 // triggers load
-img.src = 'image.jpg';
+image.src = 'image.jpg';
 
-// queues decode
-img.decode().then(function() {
-  // This is guaranteed to paint the image without flicker 
-  document.body.appendChild(img);
-});
+// queues decode once loaded
+image
+  .decode()
+  .then(function() {
+    // This is guaranteed to paint the image without flicker 
+    document.body.appendChild(img);
+  });
 ```
-
-<p class="fragment">Works in Chromium and Safari</p>
 ---
 And you can also use <code>.decode()</code> to feature test!
 

@@ -1,15 +1,15 @@
-# 5. Houdini
+<h1 class="boom">5.</h1>
 ---
 Houdini brings us the possibility to declare the type of a CSS custom property:
 
 <pre><code>CSS.registerProperty({
   name: '--multiply',
-  syntax: '<number>',
+  syntax: '&lt;number&gt;',
   inherits: false,
   initialValue: '0'
 });</code></pre>
 
-👆 This turns a CSS custom properties from a dumb string into a real number.
+<p class="fragment">👆 This turns a CSS custom properties from a dumb string into a real number.</p>
 ---
 Now we can animate it.
 
@@ -45,7 +45,7 @@ height: 100%;
   filter: drop-shadow(10px 10px 10px #000);
 }</code></pre>
 
-<div id="css-animated-backgrounds" style="position: absolute; top: 0; right: 0; width: 400px; height: 400px; padding: 10px; background: #fff; border: 1px solid #000"><div></div></div>
+<div id="css-animated-backgrounds" style="position: absolute; top: 0; right: 0; width: 400px; height: 400px;"><div></div></div>
 ---
 Combine it with <code>calc()</code> and <code>-webkit-cross-fade()</code><br>
 and you'll have a CSS-only slideshow
@@ -64,10 +64,12 @@ and you'll have a CSS-only slideshow
 }
 
 .slideshow {
-  background-image: -webkit-cross-fade(
-    url('../images/iron-man.jpg'),
-    url('../images/hawkeye.jpg'),
-    calc(100% * var(--multiply)));
+  background-image: 
+    -webkit-cross-fade(
+      url('../images/iron-man.jpg'),
+      url('../images/hawkeye.jpg'),
+      calc(100% * var(--multiply))
+    );
   animation: cross-fade 10000ms infinite;
 }</code></pre>
 

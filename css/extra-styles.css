@@ -14,6 +14,22 @@
   to {
     --multiply: 1; } }
 
+@-webkit-keyframes zero-to-one {
+  from {
+    --multiply: 0; }
+  20% {
+    --multiply: 1; }
+  to {
+    --multiply: 1; } }
+
+@keyframes zero-to-one {
+  from {
+    --multiply: 0; }
+  20% {
+    --multiply: 1; }
+  to {
+    --multiply: 1; } }
+
 @-webkit-keyframes cross-fade {
   0% {
     --cross-fade: 0; }
@@ -61,6 +77,10 @@ body {
   .reveal a:not(.image) {
     color: #b70035;
     text-shadow: 1px -1px 1px #fff, 1px 1px 1px #fff, -1px -1px 1px #fff, -1px 1px 1px #fff; }
+    .reveal a:not(.image):hover {
+      color: #b70035;
+      text-decoration: underline;
+      text-shadow: 1px -1px 1px #fff, 1px 1px 1px #fff, -1px -1px 1px #fff, -1px 1px 1px #fff; }
   .reveal pre {
     box-shadow: none;
     font-size: inherit;
@@ -119,6 +139,8 @@ body {
     margin: 0 auto; }
   .reveal li {
     margin-bottom: 1rem; }
+  .reveal p + ul {
+    margin-top: 1em; }
   .reveal .comic-border {
     padding: 10px;
     border: 1px solid #000;
@@ -379,3 +401,19 @@ body {
     width: 100%;
     height: 100%;
     background: #000; }
+  .reveal .boom {
+    position: relative;
+    font-size: 300px; }
+    .reveal .boom::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80vh;
+      height: 60vh;
+      background-image: url("../images/explosion/explosion.webp");
+      background-repeat: no-repeat;
+      background-size: contain;
+      -webkit-transform: translate(-65%, -35%) scale(3);
+              transform: translate(-65%, -35%) scale(3);
+      mix-blend-mode: multiply; }
